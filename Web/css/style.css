@@ -1,0 +1,141 @@
+/* My-Rover Web Interface Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #16213e;
+    border-bottom: 2px solid #0f3460;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img.logo {
+    height: 48px;
+    width: auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #e94560;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+.card {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #e94560;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #c0c0c0;
+}
+
+nav.page-nav {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav.page-nav a {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: #0f3460;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #e94560;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav.page-nav a:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* Status page specific */
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.status-item {
+    background-color: #0f3460;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.status-item .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.status-item .value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.status-item .value.ok {
+    color: #4caf50;
+}
+
+.status-item .value.warn {
+    color: #ff9800;
+}
+
+.status-item .value.err {
+    color: #e94560;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #16213e;
+    border-top: 1px solid #0f3460;
+    font-size: 0.8rem;
+    color: #555;
+}
